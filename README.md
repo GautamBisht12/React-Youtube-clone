@@ -1,10 +1,10 @@
 <<<<<<< HEAD
 
-![Todo List App Screenshot](./src/assets/home.png)
-![Todo List App Screenshot](./src/assets/channel.png)
-![Todo List App Screenshot](./src/assets/search.png)
-![Todo List App Screenshot](./src/assets/tag.png)
-![Todo List App Screenshot](./src/assets/video.png)
+![Todo List App Screenshot](./src/assets/home.jpg.png)
+![Todo List App Screenshot](./src/assets/channel.jpg.png)
+![Todo List App Screenshot](./src/assets/search.jpg.png)
+![Todo List App Screenshot](./src/assets/tag.jpg.png)
+![Todo List App Screenshot](./src/assets/video.jpg.png)
 
 # My Tube Web Application
 

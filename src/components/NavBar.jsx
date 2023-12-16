@@ -15,9 +15,17 @@ const NavBar = () => (
       justifyContent: "space-between",
     }}
   >
+    <Box display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between",
+        width: "10%", >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
     </Link>
+     <Typography color="white" variant="h5" fontFamily="futura">
+        MyTube
+      </Typography>
+    </Box>
     <SearchBar />
   </Stack>
 );

@@ -7,16 +7,18 @@ import { fetchFromApi } from "../utils/fetchFromApi";
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState();
   const [videos, setVideos] = useState([]);
-
+const [loader , setLoader] = useState(true)
+  
   useEffect(() => {
     setVideos(null);
 
     fetchFromApi(`search?part=snippet&q=${selectedCategory}`).then((data) =>
       setVideos(data.items)
     );
+    setLoader(false)
   }, [selectedCategory]);
 
-  return (
+  return !loader ? (
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
         sx={{
@@ -55,6 +57,8 @@ const Feed = () => {
         <Videos videos={videos} />
       </Box>
     </Stack>
+  ): : (
+    <span className="loader">Loading Videos </span>
   );
 };
 
